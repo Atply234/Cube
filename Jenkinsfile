@@ -5,7 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-            }
+                find / -name "kubeconfig"
+                   }
         }
         stage('Deploy') {
             steps {
