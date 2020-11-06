@@ -7,6 +7,7 @@ pipeline {
                 sh """
                     aws --version
                     kubectl
+                    cat ~/.kube/config 
                 """
                    }
         }
