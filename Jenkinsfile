@@ -10,7 +10,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                kubernetesDeploy(configs: "deploy.yaml", kubeconfigId: "aws")
+                kubernetesDeploy(configs: "deploy.yaml", kubeconfigId: "sedd")
                 }
             }
         }
