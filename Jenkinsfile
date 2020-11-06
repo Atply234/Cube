@@ -4,7 +4,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh """
+                    aws --version
+                    kubectl
+                """
                    }
         }
         stage('Deploy') {
