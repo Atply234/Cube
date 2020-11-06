@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                aws --version
                 find / -name "kubeconfig"
                    }
         }
