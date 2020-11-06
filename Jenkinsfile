@@ -13,7 +13,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                kubernetesDeploy(configs: "deploy.yaml", kubeconfigId: "aws",enableConfigSubstitution: false)
+                kubernetesDeploy(configs: "deploy.yaml", kubeconfigId: "asd",enableConfigSubstitution: false)
                 }
             }
         }
